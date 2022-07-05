@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles/body.css">
+  
+  <style>
+    .attribution { font-size: 13px; text-align: center; bottom:0; position:absolute;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="./javascript/formValidate.js"></script>
+  <div id="texto-rightside">
+  <h1>Learn to code by watching others</h1>
+  
+    <h3>
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+      </h3>
+</div>
+<div id="texto-leftside">
+  <div id="primeiradiv">
+ <p>Try it free 7 days<span>  then $20/mo. thereafter </span></p>
+  </div>
+  <div id="segundadiv">
+    <form method="post" action="/ola">
+    
+    <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Za-z].{2,}"  title="Needs to put"><br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Za-z].{2,}"  title="Needs to put last name"><br>
+    <input type="email" id="emailadd" name="emailadd" placeholder="Email Address" pattern ="([1-9]|[A-Za-z]).{2,}@([1-9]|[A-Za-z]).{3,}"  title="Needs to put email"><br>
+    <input type="password" id="secret" name="secret" placeholder="Password" pattern="([1-9]|[A-Za-z]).{3,}"s  title="Precisa colocar uma senha!"><br>
+    <button type="submit"><h3>Claim your free trial</h3></button><br> 
+   
+    </form>
+    <p id = "information">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    
+  </div>
+  
+</div>
+
+
+
+
+
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Luís Henrique Ferreira Freire</a>.
+  </p>
+</footer>
+</body>
+</html>
